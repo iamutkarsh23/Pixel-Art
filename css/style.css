@@ -1,0 +1,255 @@
+html, body{
+  height: 100%;
+}
+
+body {
+  background-color: #F5FEA8	!important;
+  /* Makes the text in body of html unselectable */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* For all the card header */
+#card-head {
+  background: linear-gradient(to right, rgb(255, 255, 0), rgb(255, 255, 80));
+  font-family: 'Exo 2', sans-serif;
+}
+
+/* For card borders */
+.card {
+  border: 1px solid gray !important;
+}
+
+/* Specifies size of the pixels */
+#showgrid {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+@media screen {
+  div#showgrid {
+    margin: auto;
+  }
+}
+
+div.column {
+  border-style: solid;
+  border-width: 1px;
+}
+
+/* For pixel box's row */
+.row {
+  width: 100%;
+  margin: auto;
+}
+
+/* For pixel box */
+.column {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  transform: .5s ease;
+  cursor: crosshair;
+}
+
+/* For pixel box */
+.column:hover {
+  transform: scale(1.2);
+  cursor: crosshair;
+}
+
+/* For the text on website */
+code {
+  color: black !important; 
+  font-size:1.0em;
+}
+
+/* For main heading - Pixel Art */
+.main-heading {
+  text-align: center;
+  font-family: 'ZCOOL XiaoWei', serif;
+	border-bottom: 2px solid lightblue;
+	border-right: 2px solid lightblue;
+	width: 800px;
+	box-shadow: 4px 4px 5px #888888;
+	margin-top: 8px;
+  display: block;
+  font-size: 5.5rem;
+  letter-spacing: 30px;
+  background-color: #FF5E11;
+}
+
+/* Better responsivenss */
+#enter-rowcol {
+  word-wrap: break-word;
+}
+
+/* Better responsivenss */
+#rowColLabel {
+  padding-left: 5px;
+}
+
+/* Better styling for toolbox */
+#red-button:hover, #maroon-button:hover, #yellow-button:hover,#lime-button:hover,#blue-button:hover,#navy-button:hover, #green-button:hover, #black-button:hover, #white-button:hover, #eraser:hover{
+  transform: scale(1.1);
+  cursor: crosshair;
+}
+
+/* Custom colors button */
+#color-palette {
+  width:40px;
+  height: 40px;
+  transform: .5s ease;
+  border-color: black;
+}
+
+#custom-button:hover{
+  transform: scale(1.1);
+}
+
+/* Styling Eraser */
+#eraser{
+  background: white;
+  width: 50px;
+  height: 50px;
+  transform: .5s ease;
+  border-color: black;
+}
+
+#Toolbox {
+  background-color:	#D3D3D3;
+}
+
+#Toolbox-header {
+  background-color: #A9A9A9;
+  font-family: 'Exo 2', sans-serif;
+  cursor: move;
+}
+
+#collapseIconDiv {
+  cursor: pointer;
+}
+
+#collapseIconDiv::before{
+  padding-left: 10px;
+}
+
+/* Footer Styling */
+footer {
+  bottom: 0;
+  width: 100%;
+  display: table-row;
+  height: 180px;
+  padding: 50px 0px 50px;
+  background-color: black;
+}
+
+/* 
+  Device = IPads
+  Screen = 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px){
+  footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;  
+  }
+}
+
+/* 
+  Device = IPads (Landscape)
+  Screen = 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+/* 
+  Device = Tablets, Mobiles (Landscape)
+  Screen = 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  footer{
+    position: absolute;
+    bottom:0; 
+    width:100%; 
+  }
+}
+
+/* 
+  Device = Smartphones (Portrait)
+  Screen = 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }  
+}
+
+/* Footer Styling */
+.flex-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #262F38;
+}
+
+.footer-info {
+  color: #8F9AA7;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+footer #footer-icons a {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  text-align: center;
+  /* Margin to separate icons */
+  margin: 0 15px;
+  background: #262F38;
+  font-size: 18pt;
+}
+
+footer #footer-icons a i {
+  margin-top: 13px;
+}
+
+/* ios style scrollable design */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  opacity:0.1;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.5); 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #262F38;
+}
